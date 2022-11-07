@@ -4,6 +4,7 @@
 {% load crispy_forms_tags %}
 
 {% block content  %}
+<title>Register Account</title>
 
 <br>
     <div class="container bg-white shadow-md p-5 form_layout">
@@ -23,7 +24,8 @@
             <br><br>
             {{form.password2|as_crispy_field}}
             <br><br>
-
+            {{form.captcha}}
+            <br><br>
             <button type="submit" class="btn btn-info btn-lg w-100 btn-block p-3">Create Account </button>
 
         </form>
